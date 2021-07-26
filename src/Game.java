@@ -3,23 +3,36 @@ public class Game {
     private String Dog;
     private String Vet;
 
-    public void setAdopter(String Adopter){
-        this.Adopter=Adopter ;
+    public void setAdopter(String Adopter) {
+        this.Adopter = Adopter;
     }
-    public String getAdopter(){
+
+    public String getAdopter() {
         return Adopter;
     }
-    public void setDog(String Dog){
-        this.Dog=Dog;
+
+    public void setDog(String Dog) {
+        this.Dog = Dog;
     }
-    public String getDog(){
+
+    public String getDog() {
         return Dog;
     }
-    public void setVet(String Vet){
-        this.Vet=Vet;
+
+    public void setVet(String Vet) {
+        this.Vet = Vet;
     }
-    public String getVet(){
+
+    public String getVet() {
         return Vet;
     }
 
+    @Override
+    public String toString() {
+        return "Game{" +
+                "Adopter='" + Adopter + '\'' +
+                ", Dog='" + Dog + '\'' +
+                ", Vet='" + Vet + '\'' +
+                '}';
+    }
 }

@@ -1,40 +1,70 @@
+import java.time.LocalDate;
+
 public class Food {
     private String name;
     private float price;
     private float quantity;
-    private java.time.LocalDate expirationDate;
+    private LocalDate expirationDate;
     private int stockAvailability;
+    private String type;
 
-    public void setName(String name){
-        this.name=name;
+    public void setType(String type) {
+        this.type = type;
     }
-    public void setPrice(float price){
-        this.price=price;
+
+    public String getType() {
+        return type;
     }
-    public void setQuantity(float quantity){
-        this.quantity=quantity;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setExpirationDate(java.time.LocalDate expirationDate){
-        this.expirationDate =expirationDate;
+
+    public void setPrice(float price) {
+        this.price = price;
     }
-    public void setStockAvailability(int stockAvailability){
-        this.stockAvailability =stockAvailability;
+
+    public void setQuantity(float quantity) {
+        this.quantity = quantity;
     }
-    public String getName(){
+
+    public void setExpirationDate(LocalDate expirationDate) {
+        this.expirationDate = expirationDate;
+    }
+
+    public void setStockAvailability(int stockAvailability) {
+        this.stockAvailability = stockAvailability;
+    }
+
+    public String getName() {
         return name;
     }
-    public float getPrice(){
+
+    public float getPrice() {
         return price;
     }
-    public float getQuantity(){
+
+    public float getQuantity() {
         return quantity;
     }
-    public java.time.LocalDate getExpirationDate(){
+
+    public LocalDate getExpirationDate() {
         return expirationDate;
     }
-    public int getStockAvailability(){
+
+    public int getStockAvailability() {
         return stockAvailability;
     }
 
-
+    @Override
+    public String toString() {
+        return "Food{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", quantity=" + quantity +
+                ", expirationDate=" + expirationDate +
+                ", stockAvailability=" + stockAvailability +
+                ", type =" + type +
+                '}';
+    }
 }

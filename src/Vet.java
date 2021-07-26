@@ -2,17 +2,27 @@ public class Vet {
     private String name;
     private String specialization;
 
-    public void setName(String name){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setSpecialization(String specialization){
-        this.specialization=specialization;
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public String getSpecialization(){
+
+    public String getSpecialization() {
         return specialization;
     }
 
+    @Override
+    public String toString() {
+        return "Vet{" +
+                "name='" + name + '\'' +
+                ", specialization='" + specialization + '\'' +
+                '}';
+    }
 }
