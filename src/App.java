@@ -100,21 +100,18 @@ public class App {
         dog.eat(special);
 
         dog.setWeight(9);
-        
-          dog.wakeup();
-          dog.eat(special);
-          dog.walk();
-          dog.sleep();
-          dog.wakeup();
-          dog.play();
-          dog.walk();
-          dog.eat(special);
-          dog.sleep();
 
-
-
-
-
+        do {
+            dog.wakeup();
+            dog.eat(special);
+            dog.walk();
+            dog.sleep();
+            dog.wakeup();
+            dog.play();
+            dog.walk();
+            dog.eat(special);
+            dog.sleep();
+        } while (true);
 
     }
 }
